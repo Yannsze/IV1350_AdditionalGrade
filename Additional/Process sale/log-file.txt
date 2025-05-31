@@ -1,0 +1,16 @@
+25 maj 2025 12:55:13Exception was thrown: Database is not running. Could not search for item.
+se.kth.iv1350.pointOfSale.integration.DatabaseConnectionException: Database is not running. Could not search for item.
+	at se.kth.iv1350.pointOfSale.integration.InventorySystem.itemFound(InventorySystem.java:32)
+	at se.kth.iv1350.pointOfSale.controller.Controller.scanItem(Controller.java:86)
+	at se.kth.iv1350.pointOfSale.view.View.runInitializeSale(View.java:37)
+	at se.kth.iv1350.pointOfSale.startUp.Main.main(Main.java:25)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+25 maj 2025 12:55:13Exception was thrown: Item not found
+se.kth.iv1350.pointOfSale.integration.ItemInvalidException: Item not found
+	at se.kth.iv1350.pointOfSale.integration.InventorySystem.itemFound(InventorySystem.java:39)
+	at se.kth.iv1350.pointOfSale.controller.Controller.scanItem(Controller.java:86)
+	at se.kth.iv1350.pointOfSale.view.View.runInitializeSale(View.java:43)
+	at se.kth.iv1350.pointOfSale.startUp.Main.main(Main.java:25)
+	at org.codehaus.mojo.exec.ExecJavaMojo$1.run(ExecJavaMojo.java:279)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

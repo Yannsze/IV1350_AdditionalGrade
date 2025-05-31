@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: test.se.kth.iv1350.pointOfSale.view.TotalRevenueViewTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.008 s <<< FAILURE! - in test.se.kth.iv1350.pointOfSale.view.TotalRevenueViewTest
+test.se.kth.iv1350.pointOfSale.view.TotalRevenueViewTest.testDoShowTotalIncomePrintsTotalIncome  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Should print total income. ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:210)
+	at test.se.kth.iv1350.pointOfSale.view.TotalRevenueViewTest.testDoShowTotalIncomePrintsTotalIncome(TotalRevenueViewTest.java:33)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
