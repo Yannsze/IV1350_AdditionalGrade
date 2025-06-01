@@ -34,10 +34,6 @@ public class Sale {
         VAT = 0.06;
     }
 
-    public void setLogger(TotalRevenueFileOutput totalRevenueFileLog) {
-        this.totalRevenueFileLog = totalRevenueFileLog;
-    }
-
     /**
      * The method provides access to the current sale list.
      * @return current sale list containing array list of sold items.
@@ -173,20 +169,10 @@ public class Sale {
 
     /**
      * Adds an observer that will be notified of updates to the total price.
-     * @param obs The observer to be added.
+     * @param observer The observer to be added.
      */
-    public void addTotalObserver(TotalRevenueObserver obs){
-        totalPriceObservers.add(obs);
-    }
-
-    /**
-     * Adds an observer that will log the total revenue to a file when the sale is updated.
-     * This method is used to separate logging functionality from the UI.
-     *
-     * @param obs The file-based observer to be added.
-     */
-    public void addTotalFileOutPut(TotalRevenueObserver obs){
-        totalPriceObservers.add(obs);
+    public void addTotalObserver(TotalRevenueObserver observer){
+        totalPriceObservers.add(observer);
     }
 
     /**
@@ -194,8 +180,8 @@ public class Sale {
      * This method is called whenever the sale total changes.
      */
     public void notifyObservers(){
-        for(TotalRevenueObserver totalPriceObs : totalPriceObservers){
-            totalPriceObs.newTotalPrice(totalPriceInclVAT);
+        for(TotalRevenueObserver obs : totalPriceObservers){
+            obs.newTotalPrice(totalPriceInclVAT);
         }
     }
 }
